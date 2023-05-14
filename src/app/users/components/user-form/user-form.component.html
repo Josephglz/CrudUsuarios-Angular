@@ -1,0 +1,37 @@
+<div mat-dialog-title>Registro de nuevo usuario</div>
+
+<form class="example-form" [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+  <div mat-dialog-content>
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Nombre(s)</mat-label>
+            <input matInput type="text" formControlName="name" />
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Apellidos</mat-label>
+            <input matInput type="text" formControlName="lastName" />
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Correo electrónico</mat-label>
+      <input
+        matInput
+        type="email"
+        placeholder="correo@correo.com"
+        formControlName="email"
+      />
+    </mat-form-field>
+  </div>
+
+  <div mat-dialog-actions>
+    <button mat-button color="warn" type="button" [mat-dialog-close]="false">Cancelar</button>
+    <button mat-raised-button color="primary" type="submit">{{data ? 'Actualizar' : 'Guardar'}}</button>
+  </div>
+</form>

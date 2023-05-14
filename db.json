@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "Joseph Ian",
+      "lastName": "Gonzalez",
+      "email": "joseph@correo.com",
+      "id": 1
+    },
+    {
+      "name": "Prueba",
+      "lastName": "Uno",
+      "email": "correo@dos.com",
+      "id": 2
+    },
+    {
+      "name": "Prueba",
+      "lastName": "Dos",
+      "email": "prueba@cuatro",
+      "id": 3
+    },
+    {
+      "name": "Usuario",
+      "lastName": "Prueba",
+      "email": "correo@pruebas.com",
+      "id": 4
+    }
+  ]
+}
